@@ -1,10 +1,11 @@
 {
   "name": "@godievski/rn-syntax-highlighter",
   "version": "0.1.0",
-  "description": "Syntax highlighter for react native",
-  "main": "lib/index.js",
+  "description": "Syntax highlighter for React-Native",
+  "types": "lib/index.d.ts",
+  "main": "lib/RNSyntaxHighlighter",
   "scripts": {
-    "build": "tsc -p ."
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -17,10 +18,17 @@
   ],
   "author": "Diego Guardia",
   "license": "ISC",
+  "files": [
+    "lib"
+  ],
   "bugs": {
     "url": "https://github.com/godievski/rn-syntax-highlighter/issues"
   },
   "homepage": "https://github.com/godievski/rn-syntax-highlighter#readme",
+  "dependencies": {
+    "react-native-gesture-handler": ">=1.7.0",
+    "react-syntax-highlighter": ">=13.5.0"
+  },
   "peerDependencies": {
     "react": ">=16.0.0",
     "react-native": ">=0.63.0",
@@ -35,6 +43,9 @@
     "react-native": "^0.63.2",
     "react-native-gesture-handler": "^1.7.0",
     "react-syntax-highlighter": "^13.5.1",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-react": "^5.0.0",
     "typescript": "^4.0.2"
   }
 }

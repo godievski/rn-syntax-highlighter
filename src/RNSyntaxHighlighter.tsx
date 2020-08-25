@@ -11,6 +11,7 @@ import * as hljsStyles from "react-syntax-highlighter/dist/esm/styles/hljs";
 import { ScrollView } from "react-native-gesture-handler";
 import { createStyleObject } from "./utils";
 import styles from "./styes";
+import { RNSyntaxHighlighterProps } from "./types";
 
 const styleCache = new Map();
 
@@ -267,17 +268,6 @@ export const CodeTag = (props: ScrollViewProps) => {
       contentContainerStyle={styles.codetag}
     />
   );
-};
-
-export type RNSyntaxHighlighterProps = {
-  fontFamily?: string;
-  fontSize?: number;
-  children: React.ReactNode;
-  style?: string;
-  language?: string;
-  dark?: boolean;
-  highlighter: string;
-  startingLineNumber?: number;
 };
 
 const fontFamilyDef = Platform.OS == "ios" ? "Menlo-Regular" : "monospace";
