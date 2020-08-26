@@ -11,7 +11,17 @@ import * as hljsStyles from "react-syntax-highlighter/dist/esm/styles/hljs";
 import { ScrollView } from "react-native-gesture-handler";
 import { createStyleObject } from "./utils";
 import styles from "./styes";
-import { RNSyntaxHighlighterProps } from "./types";
+
+export type RNSyntaxHighlighterProps = {
+  fontFamily?: string;
+  fontSize?: number;
+  children: React.ReactNode;
+  style?: string;
+  language?: string;
+  dark?: boolean;
+  highlighter: string;
+  startingLineNumber?: number;
+};
 
 const styleCache = new Map();
 
@@ -180,6 +190,8 @@ function createNativeElement({
         {children}
       </Text>
     );
+  } else {
+    return null;
   }
 }
 
