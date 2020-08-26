@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
     "allowJs": true,
-    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
     "isolatedModules": true,
     "jsx": "react-native",
-    "lib": ["dom", "es2017"],
+    "lib": ["es2017"],
     "moduleResolution": "node",
     "sourceMap": true,
     "declaration": true,
@@ -13,8 +13,9 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "strict": true,
-    "target": "es2017",
+    "target": "es5",
     "outDir": "lib",
+    "rootDir": "src",
     "module": "commonjs",
     "skipLibCheck": true
   },
@@ -22,7 +23,8 @@
     "node_modules",
     "babel.config.js",
     "metro.config.js",
-    "jest.config.js"
+    "jest.config.js",
+    "lib"
   ],
   "include": ["./src/**/*.tsx", "./src/**/*.ts"]
 }

@@ -2,9 +2,7 @@
  * This code is based on:
  * https://github.com/conorhastings/react-native-syntax-highlighter
  */
-// tslint:disable-next-line: no-implicit-dependencies
 import React, { useMemo } from "react";
-// tslint:disable-next-line: no-implicit-dependencies
 import { Text, Platform, ScrollViewProps, View } from "react-native";
 import { Prism } from "react-syntax-highlighter";
 import SyntaxHighlighter from "react-syntax-highlighter";
