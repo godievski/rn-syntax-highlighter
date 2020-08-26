@@ -1,6 +1,6 @@
 {
   "name": "@godievski/rn-syntax-highlighter",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Syntax highlighter for React-Native",
   "types": "lib/index.d.ts",
   "main": "lib/RNSyntaxHighlighter",
