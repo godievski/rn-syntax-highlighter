@@ -277,7 +277,7 @@
         "affectsGlobalScope": false
       },
       "./src/rnsyntaxhighlighter.tsx": {
-        "version": "f3982d5e6a4be784ba0f73ac9974d19bb02d8a3e5add111383187037f2bc8253",
+        "version": "2e39587454342d5d02ba62292078647a2c4bd712623d93c0ab75028ba619cc48",
         "signature": "51c0c0648a2f79dd629a97bd64bb6e71923459d8e4ea6cf28453c232b238e168",
         "affectsGlobalScope": false
       },
