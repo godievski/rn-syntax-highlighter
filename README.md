@@ -5,6 +5,7 @@ Syntax highlighting component for `React Native` using <a href='https://github.c
 ## Install
 
 `npm install @godievski/rn-syntax-highlighter --save`
+`npx pod-install`
 
 ## Use
 
