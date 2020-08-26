@@ -209,7 +209,8 @@ function nativeRenderer({
   startingLineNumber: number;
 }) {
   return ({ rows, stylesheet }: { rows: Node[]; stylesheet: object }) => {
-    const width = Math.floor(Math.log10(rows.length)) * fontSize * 1.75;
+    const width =
+      16 + (1 + Math.floor(Math.log10(rows.length))) * fontSize * 0.75;
     return rows.map((node, i) => {
       return (
         <View
